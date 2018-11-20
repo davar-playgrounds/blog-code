@@ -86,7 +86,7 @@ resource "oci_core_instance" "image_builder_vm" {
     private_ip = "192.168.1.2"
   }
   metadata {
-    ssh_authorized_keys = "${file("~/.ssh/oci_id_rsa.pub")}"
+    ssh_authorized_keys = "${file("../keys/oci_id_rsa.pub")}"
   }
   timeouts {
     create = "5m"

@@ -1,5 +1,5 @@
 #!/bin/bash
-max_iter=12
+max_iter=20
 i=0; while [ $i -lt $max_iter ]; do
   nc -zw 1 $vm_ip 22;
   if [ "$?" -eq "0" ]; then echo "IB: connected to VM"; break; fi;
