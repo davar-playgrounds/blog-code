@@ -2,9 +2,9 @@
 # Customize here
 OCI_POLICY_COMPARTMENT_OCID={put-here-your-compartment-OCID-for-policy}
 OCI_PROJECT_CODE={put-here-your-project-code}
+OCI_GROUP={put-here-group-the-user-belongs-to}
 OCI_POLICY_NAME="p-$OCI_PROJECT_CODE-ocir-policy"
 OCI_POLICY_DESC="$OCI_PROJECT_CODE project OCIR policy"
-OCI_GROUP="$OCI_PROJECT_CODE-developers"
 OCI_PROJECT_PREFIX="p-$OCI_PROJECT_CODE"
 
 # Add a new policy statements to let group member manage OCIR repositories with a specific naming pattern
