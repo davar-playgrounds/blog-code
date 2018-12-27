@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: simpleapiimage
+spec:
+  containers:
+    - name: simpleapi
+      image: fra.ocir.io/jakobczyk/p-oraas-simple-api:1.0
+      imagePullPolicy: Always
+      ports:
+      - name: simpleapi
+        containerPort: 8080
+        protocol: TCP
+  imagePullSecrets:
+    - name: ocirsecret
